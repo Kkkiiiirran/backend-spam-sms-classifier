@@ -2,6 +2,5 @@ fastapi
 uvicorn
 nltk
 scikit-learn
-string
 uvicorn
 pydantic
