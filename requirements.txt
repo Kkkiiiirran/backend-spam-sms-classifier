@@ -2,7 +2,6 @@ fastapi
 uvicorn
 nltk
 scikit-learn
-pickle
 string
 uvicorn
 pydantic
