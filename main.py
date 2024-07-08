@@ -117,6 +117,10 @@ class SMSInput(BaseModel):
 
 app = FastAPI()
 
+@app.get("/")
+def read_root():
+    return {"message": "Successful"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Allows all origins
