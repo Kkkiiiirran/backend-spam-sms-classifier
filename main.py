@@ -87,6 +87,15 @@ import uvicorn
 ps = PorterStemmer()
 nltk.download('stopwords')
 
+import nltk
+import os
+
+# Set the NLTK data path to a directory in your project
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), 'nltk_data'))
+
+# Download the required data
+
+
 def transform_text(text):
     text = text.lower()
     text = nltk.word_tokenize(text)
